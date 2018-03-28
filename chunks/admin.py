@@ -1,6 +1,8 @@
 from django.contrib import admin
-from models import Chunk
 from defaults.admin import BaseTranslationAdmin
+
+from .models import Chunk
+
 
 class ChunkAdmin(BaseTranslationAdmin):
   list_display = ('key','description',)
