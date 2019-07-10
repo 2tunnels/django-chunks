@@ -17,13 +17,13 @@ class Migration(migrations.Migration):
             name='Chunk',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('key', models.CharField(help_text=b'A unique name for this chunk of content', max_length=255, unique=True)),
+                ('key', models.CharField(help_text='A unique name for this chunk of content', max_length=255, unique=True)),
                 ('content', models.TextField(blank=True)),
                 ('content_en', models.TextField(blank=True, null=True)),
                 ('content_de', models.TextField(blank=True, null=True)),
                 ('content_fr', models.TextField(blank=True, null=True)),
                 ('content_it', models.TextField(blank=True, null=True)),
-                ('description', models.CharField(blank=True, help_text=b'Short Description', max_length=64)),
+                ('description', models.CharField(blank=True, help_text='Short Description', max_length=64)),
             ],
         ),
     ]
